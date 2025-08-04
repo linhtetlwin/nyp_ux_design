@@ -1,0 +1,195 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f4ef;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #f9f4ef;
+}
+
+/* Logo styles - clickable NYP Primers logo */
+.logo {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.logo:hover {
+  opacity: 0.7;
+}
+
+.cube {
+  font-size: 1.5rem;
+  margin-right: 0.4rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Profile icon styles - clickable profile image */
+.profile-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('profile.svg') center/cover no-repeat; /* Replace with your profile icon path */
+  border-radius: 50%;
+  margin-left: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.profile-icon:hover {
+  box-shadow: 0 0 8px #aaa;
+}
+
+/* Sections */
+main {
+  padding: 2rem;
+}
+
+.event-section h2 {
+  margin-bottom: 1rem;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Event card styles - for displaying event info */
+.event-card {
+  background-color: #f3f3f3;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+  /* Animation added below */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 0.7s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.event-card .image-placeholder {
+  background-color: #ddd;
+  height: 120px;
+}
+
+.event-card-text {
+  padding: 0.8rem;
+  border-top: 2px solid #c2762b;
+}
+
+.event-card-text strong {
+  color: #c2762b;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Event Details */
+.event-details {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.event-details .details {
+  flex: 1;
+  min-width: 280px;
+}
+
+.event-details .image-placeholder.large {
+  background-color: #ddd;
+  height: 200px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.enroll {
+  background-color: #c2762b;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.withdraw {
+  background-color: #ccc;
+  color: #555;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+  background-color: #c2762b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Social icons styles - clickable circles for social media */
+.social-icons a.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  vertical-align: middle;
+}
+.social-icons a.icon:hover {
+  background: #0077ff;
+  box-shadow: 0 0 8px #0077ff44;
+}
+
+/* Social icon images for each platform */
+.social-icons a.icon[aria-label="Instagram"] {
+  background: url('instagram.svg') center/60% no-repeat, #ccc; /* Replace with your Instagram icon path */
+}
+.social-icons a.icon[aria-label="Facebook"] {
+  background: url('facebook.svg') center/60% no-repeat, #ccc; /* Replace with your Facebook icon path */
+}
+.social-icons a.icon[aria-label="Twitter"] {
+  background: url('twitter.svg') center/60% no-repeat, #ccc; /* Replace with your Twitter icon path */
+}
+

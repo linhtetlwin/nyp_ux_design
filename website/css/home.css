@@ -1,0 +1,135 @@
+/* start of hero */
+.hero{
+    height: 450px;
+    
+    padding: 30px 20px;
+    width: 100%;
+    gap: 15px;
+    justify-content: space-between;
+    display: flex;
+}
+.content{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;  
+    flex-direction: column;    
+}
+.hero-img{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.hero-img img{
+    /* height: 100%; */
+    width: 800px;
+}
+/* end of hero */
+
+/* start of motto */
+.motto{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 35px 20px;
+    text-align: center;
+}
+.motto h1, .motto p{
+    margin: 0px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color) !important;
+}
+.motto h1{
+    font-size: 50px;
+    font-size: bold;   
+}
+.motto p{
+    color: var(--secondary-color);
+}
+/* end of motto */
+
+/* start of activities */
+.activities{
+    padding: 30px 20px;
+}
+.activity-card-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    border: 0 !important;
+}
+.card-parent{
+    width: 23%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0px !important;
+    margin: 16px 8px 8px 0px;
+}
+.card-image{
+    height: 260px;
+    /* overflow: hidden; */
+    display: flex;
+}
+.card-body{
+    padding: 1 !important;
+    margin: 0 !important;
+}
+.card-body h1{
+    font-size: 28px; 
+}
+.card-body h2{
+    font-size: 16px;
+    color: var(--primary-color);
+}
+/* end of activities */
+
+/* responsive design */
+@media (max-width: 1173px) {
+      .hero {
+        height: 500px;
+      }
+}
+@media (max-width: 900px) {
+    .card-parent {
+        width: 43%;
+      }
+      .card-image{
+        height: 290px;
+      }
+      
+}
+@media (max-width: 800px) {
+      .hero {
+        flex-direction: column-reverse;
+        padding: 0px 0px 30px 0px;
+        height: 800px;
+      }
+      .hero-img, .content{
+        width: 100%;
+      }
+      .content{
+        padding: 0px 30px;
+      }
+      .activities{
+        padding: 0px 20px 30px 20px;
+      }
+      .card-parent{
+        width: 45%;
+      }
+}
+@media (max-width: 500px) {
+    .activity-card-row{
+        justify-content: center;
+    }
+    .card-parent {
+        width: 90%;
+    }
+    .card-image{
+      height: 290px;
+    }     
+}

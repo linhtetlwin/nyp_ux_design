@@ -1,0 +1,96 @@
+/* This css file contains color variables, font family, nav bar, and footer. */
+
+/* color variables */
+:root {
+  --primary-color: #BF7730;
+  --accent-color: #3B1817;
+  --secondary-color: #ffffff;
+  --bg-color: #F4F0EB;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    box-sizing: border-box;
+}
+a{
+  text-decoration: none !important;
+}
+h1{
+    color: var(--primary-color) !important;
+}
+
+/*start of nav bar */
+#navbar-container{
+    padding: 0px 20px;
+    background-color: var(--bg-color); 
+    border-bottom: 1px solid #3b181736;
+}
+.nav-item{
+    margin: 0px 20px;
+    /* border: 1px solid red; */
+}
+.nav-item a{
+    color: var(--accent-color);
+}
+/* Hover dropdown for navbar */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.nav-link.dropdown-toggle::after {
+  margin-left: 0.1rem;
+}
+.cta-btn{
+  color: white;    
+  background-color: var(--primary-color);    
+  border-color: var(--primary-color);
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  border: none;
+  box-shadow: none;
+  width: 115px !important;
+  height: 45px;
+}
+.cta-btn:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+.nav-item.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute !important;
+  z-index: 1050; 
+  top: 100%; 
+  left: 0;
+  background-color: var(--bg-color) !important; 
+}
+/*end of nav bar */
+
+/* start of footer */
+footer{
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 20px 30px 20px;
+}
+.questions, .social-media, .questions h1, .questions p, .social-media h1, .social-media p{
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+.questions, .social-media{
+  border: 1px solid red;
+  height: 100%;
+  width: 100px;
+}
+@media (max-width: 500px) {
+    footer{
+      align-items: center;
+    }
+    .questions, .social-media{
+      width: 70%;
+    }
+}
+/* end of footer */

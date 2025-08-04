@@ -1,0 +1,241 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f4ef;
+  color: #222;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #f9f4ef;
+}
+
+/* Clickable NYP Primers logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c2762b;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+/* Decorative cube for logo (optional) */
+.curve-logo {
+  font-size: 1.5rem;
+  transform: rotate(90deg);
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Clickable profile icon */
+.profile-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('profile.svg') center/cover no-repeat; /* Replace with your profile icon path */
+  border-radius: 50%;
+  margin-left: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.profile-icon:hover {
+  box-shadow: 0 0 8px #aaa;
+}
+
+/* Who We Are section styles */
+.who-we-are {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Placeholder image for Who We Are */
+.image-placeholder {
+  flex: 1;
+  min-width: 280px;
+  height: 300px;
+  background-color: #ddd;
+}
+
+/* Content styles for Who We Are */
+.content {
+  flex: 2;
+  min-width: 280px;
+}
+
+.content h2 {
+  color: #c2762b;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Exco Section styles */
+.exco {
+  background-color: #c2762b;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.exco h2 {
+  margin-bottom: 2rem;
+}
+
+/* Grid layout for exco profiles */
+.exco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Circle profile styles */
+.circle-profile .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f9f4ef;
+  margin: auto;
+}
+
+.circle-profile p {
+  margin-top: 0.5rem;
+}
+
+.circle-profile span {
+  font-size: 0.8rem;
+  display: block;
+}
+
+/* Accomplishments Section styles */
+.accomplishments {
+  padding: 2rem;
+}
+
+.accomplishments h2 {
+  color: #c2762b;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Timeline layout for accomplishments */
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Timeline horizontal line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #555;
+  z-index: 0;
+}
+
+/* Individual event on timeline */
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Image box for timeline event */
+.img-box {
+  width: 100px;
+  height: 70px;
+  background-color: #ddd;
+  margin-bottom: 0.5rem;
+}
+
+/* Dot for timeline event */
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: #c2762b;
+  border-radius: 50%;
+}
+
+/* Footer styles */
+footer {
+  background-color: #c2762b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Footer left and right columns */
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Social icons as clickable circles */
+.social-icons a.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  vertical-align: middle;
+}
+.exco h2{
+    background-color: var(--primary-color);
+}
+
+
