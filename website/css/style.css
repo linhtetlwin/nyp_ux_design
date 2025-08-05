@@ -74,23 +74,53 @@ footer{
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-evenly;
-  padding: 0px 20px 30px 20px;
+  padding: 30px 20px 30px 20px;
 }
-.questions, .social-media, .questions h1, .questions p, .social-media h1, .social-media p{
+footer .questions, footer .social-media{
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 400px;
+  text-align: center;
+}
+footer h1, footer p, footer ul{
+  margin: 0;
+}
+.questions, .social-media, .questions h1, .questions p, .social-media h1, .social-media p, .social-media ul, .social-media ul li, .email, .email a, .social-media ul li a{
   background-color: var(--primary-color) !important;
   color: var(--secondary-color) !important;
 }
-.questions, .social-media{
-  border: 1px solid red;
-  height: 100%;
-  width: 100px;
+.social-media ul li a i{
+  background-color: var(--primary-color);
+  font-size: 30px;
 }
+.fa-facebook{
+  color: #106aff !important;
+}
+.fa-instagram{
+  color: #d00be9;
+}
+.fa-tiktok{
+  color: #080808;
+}
+.social-media ul{
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 1rem; 
+  justify-content: center;
+}
+
+
 @media (max-width: 500px) {
-    footer{
-      align-items: center;
-    }
-    .questions, .social-media{
-      width: 70%;
-    }
+  footer{
+    flex-direction: column;
+  }
+  footer .questions, footer .social-media{
+    justify-content: flex-start;
+    height: 100px;
+  }
 }
 /* end of footer */
