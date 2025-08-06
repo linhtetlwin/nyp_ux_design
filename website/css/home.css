@@ -20,7 +20,8 @@
     justify-content: center;
 }
 .hero-img img{
-    height: 100%;
+    /* height: 100%; */
+    width: 100%;
 }
 /* end of hero */
 
@@ -61,109 +62,7 @@
 
 /* end of activities */
 
-/* Sign Up Dialog Modal */
-.signup-form {
-    display: flex;
-    flex-direction: column;
-}
-.form-logo{
-    width: 100%;
-    height: 150px;
-    background-color:var(--primary-color);
-    display: flex;
-    justify-content: center;
-}
-.form-logo img {
-    padding: 10px;
-    height: 100%;   
-    object-fit: contain;
-    background-color:var(--primary-color);
-}
 
-.signup-form .form-body {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 20px 0px 20px;
-}
-.personal-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.personal-details div{
-    width: 47%;
-    display: flex;
-    flex-direction: column;  
-}
-.emergency-contact-details div{
-    width: 100%;
-}
-
-.signup-form label {
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-    color: var(--primary-color);
-}
-
-.signup-form input {
-    width: 100%;
-    padding: 0.7rem 1rem;
-    margin-bottom: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    background: #fafafa;
-    font-size: 16px;
-}
-.signup-form input:focus{
-    outline: none;
-    border: 1px solid var(--primary-color);
-}
-
-
-.signup-form button[type="submit"] {
-    color: white;    
-    background-color: var(--primary-color);    
-    border-color: var(--primary-color);
-    padding: 10px 12px;
-    border-radius: 10px;
-    transition: all 0.4s ease-in-out;
-    border: none;
-    box-shadow: none;
-    width: 100% !important;
-    height: 45px;
-}
-
-.signup-form button[type="submit"]:hover {
-    background: #a05c1f;
-}
-.form-button-container{
-    padding: 0px 20px 20px 20px;
-}
-
-/* Modal styles */
-.modal {
-    position: fixed;
-    z-index: 9999;
-    left: 0; top: 0;
-    width: 100vw; height: 100vh;
-    overflow: auto;
-    background: rgba(0,0,0,0.3);
-    display: none;
-    backdrop-filter: blur(6px); /* Blur the background */
-    -webkit-backdrop-filter: blur(6px);
-}
-
-.modal-content {
-    background: #fff;
-    margin: 5vh auto;
-    width: 75vw;          
-    max-width: 900px;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-    padding: 0;
-}
 
 /* responsive design */
 @media (max-width: 1173px) {
