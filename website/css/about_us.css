@@ -19,6 +19,13 @@ header {
   background-color: #f9f4ef;
 }
 
+.content{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;  
+    flex-direction: column;    
+}
+
 /* Clickable NYP Primers logo */
 .logo {
   font-size: 1.5rem;
@@ -85,10 +92,9 @@ nav a {
   background-size: cover;
   background-position: center;
   width: 200px;   /* set your desired width */
-  height: 200px;
+  height: 258px;
   flex: 1;
   min-width: 280px;
-  height: 300px;
   background-color: #ddd;
 }
 

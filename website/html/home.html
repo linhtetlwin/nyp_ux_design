@@ -12,6 +12,7 @@
     <script src="../js/home_card.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <!-- start of nav bar -->
@@ -48,14 +49,12 @@
     <!-- end of Hero -->
 
     <!-- Sign Up Dialog Modal -->
-    <div id="signUpModal" class="modal" style="display:none;">
+    <div id="signUpModal" class="modal">
         <div class="modal-content">
-            <span id="closeModal" class="close" style="cursor:pointer; font-size:2rem; float:right;">&times;</span>
+            <!--<span id="closeModal" class="close" style="cursor:pointer; font-size:2rem; float:right;">&times;</span>*-->
             <form id="signUpForm" class="signup-form">
-                <div class="form-header">
-                    <img src="../images/logo/nyp-primers-high-resolution-logo-grayscale-transparent.png" alt="NYP Primers Logo">
-                </div>
                 <div class="form-body">
+                    <img src="../images/logo/nyp-primers-high-resolution-logo-grayscale-transparent.png" alt="NYP Primers Logo">
                     <div>
                         <label for="name">Full name</label>
                         <input type="text" id="name" name="name" required placeholder="Full name">
@@ -79,7 +78,6 @@
                 </div>
                 <div>
                     <menu>
-                        <button id="closeDialog" type="button">Cancel</button>
                         <button type="submit">Submit</button>
                     </menu>
                 </div>
@@ -110,7 +108,9 @@
                 Fun is always ingrained in our events as we mentor the primers through experiential learning. 
                 Through it you will discover more about yourselves.
            </p>
-           <button class="cta-btn" type="button">Learn More</button>
+           <div class="center-btn">
+            <a href="about_us.html" class="cta-btn">Learn More</a>
+           </div>
         </div>
 
         <!-- start of image -->
