@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const joinUsBtn = document.getElementById('joinUsBtn');
-    const navbarJoinUsBtn = document.getElementById('navbarJoinUsBtn');
     const modal = document.getElementById('signUpModal');
     const closeModal = document.getElementById('closeModal');
     const closeDialog = document.getElementById('closeDialog');
@@ -16,8 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = '';
     }
 
-    if (joinUsBtn) joinUsBtn.addEventListener('click', openModal);
-    if (navbarJoinUsBtn) navbarJoinUsBtn.addEventListener('click', openModal);
+    // ✅ Attach listener to *all* buttons with this class (even ones loaded later)
+    document.addEventListener('click', function(event) {
+        if (event.target.closest('.open-signup-modal')) {
+            openModal();
+        }
+    });
 
     if (closeModal) closeModal.addEventListener('click', closeModalFunc);
     if (closeDialog) closeDialog.addEventListener('click', closeModalFunc);
