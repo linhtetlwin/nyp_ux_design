@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -82,6 +81,11 @@ nav a {
 
 /* Placeholder image for Who We Are */
 .image-placeholder {
+  background-image: url('../images/home/aboutus.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 200px;   /* set your desired width */
+  height: 200px;
   flex: 1;
   min-width: 280px;
   height: 300px;
@@ -106,40 +110,60 @@ nav a {
 
 /* Exco Section styles */
 .exco {
-  background-color: #c2762b;
+  background-color:var(--primary-color);
   color: white;
   text-align: center;
   padding: 2rem;
+  
 }
 
 .exco h2 {
   margin-bottom: 2rem;
+  
 }
 
 /* Grid layout for exco profiles */
 .exco-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 2rem;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
+    margin: 2rem 0;
+    background-color: var(--primary-color);
 }
 
 /* Circle profile styles */
+.circle-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
 .circle-profile .circle {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  background-color: #f9f4ef;
-  margin: auto;
+  background: #ccc;
+  margin-bottom: 1rem;
+  
 }
 
 .circle-profile p {
   margin-top: 0.5rem;
+  background-color: var(--primary-color);
 }
 
 .circle-profile span {
   font-size: 0.8rem;
   display: block;
+  background-color: var(--primary-color);
+
+}
+.circle-profile strong {
+  background-color: var(--primary-color);
 }
 
 /* Accomplishments Section styles */
@@ -159,6 +183,9 @@ nav a {
   justify-content: space-around;
   align-items: flex-start;
   position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  min-height: 140px;
 }
 
 /* Timeline horizontal line */
@@ -166,10 +193,16 @@ nav a {
   content: '';
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: 5%;
+  right: 5%;
   height: 2px;
-  background-color: #555;
+  background: repeating-linear-gradient(
+    to right,
+    #555,
+    #555 10px,
+    transparent 10px,
+    transparent 20px
+  );
   z-index: 0;
 }
 
@@ -180,6 +213,53 @@ nav a {
   align-items: center;
   position: relative;
   z-index: 1;
+  min-width: 120px;
+}
+
+.event-img {
+  width:100px;
+  height: 70px;
+  border-radius: 8px;
+}
+/* Dot for timeline event */
+.dot {
+  width: 18px;
+  height: 18px;
+  background-color: #c2762b;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #c2762b;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.dot:hover {
+  box-shadow: 0 0 0 4px #c2762b;
+}
+
+/* Dialog popup for event info */
+.event-dialog {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 180px;
+  background: #fff;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 1rem;
+  z-index: 10;
+  font-size: 1rem;
+  text-align: left;
+  pointer-events: none;
+}
+
+.dot:hover + .event-dialog,
+.dot:focus + .event-dialog {
+  display: block;
 }
 
 /* Image box for timeline event */
@@ -188,14 +268,7 @@ nav a {
   height: 70px;
   background-color: #ddd;
   margin-bottom: 0.5rem;
-}
-
-/* Dot for timeline event */
-.dot {
-  width: 14px;
-  height: 14px;
-  background-color: #c2762b;
-  border-radius: 50%;
+  border-radius: 8px;
 }
 
 /* Footer styles */
@@ -236,6 +309,47 @@ footer {
 }
 .exco h2{
     background-color: var(--primary-color);
+}
+
+/* Responsive: 2 per row on small screens */
+@media (max-width: 900px) {
+    .exco-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  .timeline {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: unset;
+  }
+  .timeline::before {
+    top: unset;
+    left: 50%;
+    right: unset;
+    width: 2px;
+    height: 80%;
+    background: repeating-linear-gradient(
+      to bottom,
+      #555,
+      #555 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  }
+  .event {
+    flex-direction: row;
+    align-items: center;
+    min-width: unset;
+    margin-bottom: 2rem;
+  }
+  .dot {
+    margin-right: 1rem;
+  }
+  .event-dialog {
+    left: 100%;
+    top: 0;
+    transform: translateX(0);
+    min-width: 160px;
+  }
 }
 
 
