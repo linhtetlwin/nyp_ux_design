@@ -10,7 +10,7 @@
   --bg-color: #F4F0EB;
 }
 *{
-    font-family: "DM Serif Text", serif;
+    font-family: Arial, Helvetica, sans-serif, serif;
     background-color: var(--bg-color);
     color: var(--accent-color);
     box-sizing: border-box;
