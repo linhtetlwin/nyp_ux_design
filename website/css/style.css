@@ -186,11 +186,15 @@ img{
     padding: 0px 20px 20px 20px;
 }
 .modal {
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(6px); 
-    -webkit-backdrop-filter: blur(6px);
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px); 
+  -webkit-backdrop-filter: blur(6px);
+  position: relative;
 }
 .modal-content {
+    position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
     margin: 5vh auto;
     max-width: 900px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
@@ -244,6 +248,9 @@ footer h1, footer p, footer ul{
   justify-content: center;
 }
 @media (max-width: 500px) {
+  .personal-details div{
+    width: 100%;
+  }
   footer{
     flex-direction: column;
   }

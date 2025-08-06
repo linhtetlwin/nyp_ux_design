@@ -112,23 +112,4 @@
       height: 290px;
     }     
 }
-/* Responsive for dialog */
-@media (max-width: 900px) {
-    dialog#signUpDialog {
-        width: 98vw;
-        max-width: 98vw;
-        max-height: 98vh;
-    }
-    .signup-form {
-        max-height: 98vh;
-    }
-    .signup-form .form-body {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem;
 
-    }
-    .signup-form menu {
-        padding: 1rem;
-    }
-}
