@@ -54,33 +54,48 @@
         <div class="modal-content">
             <!--<span id="closeModal" class="close" style="cursor:pointer; font-size:2rem; float:right;">&times;</span>*-->
             <form id="signUpForm" class="signup-form">
-                <div class="form-body">
+
+                <div class="form-logo">
                     <img src="../images/logo/nyp-primers-high-resolution-logo-grayscale-transparent.png" alt="NYP Primers Logo">
-                    <div>
-                        <label for="name">Full name</label>
-                        <input type="text" id="name" name="name" required placeholder="Full name">
-                        <br>
-                        <label for="school">School</label>
-                        <input type="text" id="school" name="school" required placeholder="School">
-                        <br>
-                        <label for="emergencyName">Emergency contact name</label>
-                        <input type="text" id="emergencyName" name="emergencyName" required placeholder="Contact name">
-                        <br>
-                        <label for="emergencyNumber">Emergency contact number</label>
-                        <textarea id="emergencyNumber" name="emergencyNumber" required placeholder="Emergency number"></textarea>
+                </div>
+
+                <div class="form-body">
+                    <div class="personal-details">
+                        <div>
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" name="name" required placeholder="Full name">
+                        </div>
+
+                        <div>
+                            <label for="school">School</label>
+                            <input type="text" id="school" name="school" required placeholder="School">
+                        </div>
+
+                        <div>
+                            <label for="admission">Admission number</label>
+                            <input type="text" id="admission" name="admission" required placeholder="Admission number">
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone number</label>
+                            <input type="text" id="phone" name="phone" required placeholder="Phone number">  
+                        </div>
                     </div>
-                    <div>
-                        <label for="admission">Admission number</label>
-                        <input type="text" id="admission" name="admission" required placeholder="Admission number">
-                        <br>
-                        <label for="phone">Phone number</label>
-                        <input type="text" id="phone" name="phone" required placeholder="Phone number">
+
+                    <div class="emergency-contact-details">
+                        <div>
+                            <label for="emergencyName">Emergency contact name</label>
+                            <input type="text" id="emergencyName" name="emergencyName" required placeholder="Emergency contact name">
+                        </div>
+
+                        <div>
+                            <label for="emergencyNumber">Emergency contact number</label>
+                            <input type="text" id="emergencyNumber" name="emergencyNumber" required placeholder="Emergency contact number">
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <menu>
+                <div class="form-button-container">
                         <button type="submit">Submit</button>
-                    </menu>
                 </div>
             </form>
         </div>
