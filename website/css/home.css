@@ -72,8 +72,10 @@
 }
 .card-image{
     height: 260px;
-    /* overflow: hidden; */
     display: flex;
+}
+.card-image img{
+    object-fit: cover;
 }
 .card-body{
     padding: 1 !important;
@@ -268,7 +270,7 @@ dialog#signUpDialog {
         width: 100%;
       }
       .content{
-        padding: 0px 30px;
+        padding: 0px 20px;
       }
       .activities{
         padding: 0px 20px 30px 20px;
@@ -282,7 +284,7 @@ dialog#signUpDialog {
         justify-content: center;
     }
     .card-parent {
-        width: 90%;
+        width: 100%;
     }
     .card-image{
       height: 290px;
