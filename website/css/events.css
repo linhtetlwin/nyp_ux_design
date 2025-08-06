@@ -2,27 +2,16 @@
 main {
   padding: 30px 20px;
 }
-
-.event-section h2 {
-  margin-bottom: 1rem;
+.card-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2%;
+}
+section{
+  margin-bottom: 30px;
 }
 
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-/* Event card styles - for displaying event info */
-.event-card {
-  background-color: #f3f3f3;
-  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
-  /* Animation added below */
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeSlideIn 0.7s ease forwards;
-}
 
 @keyframes fadeSlideIn {
   to {

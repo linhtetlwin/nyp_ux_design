@@ -1,7 +1,6 @@
 /* start of hero */
 .hero{
-    height: 450px;
-    
+    height: 450px; 
     padding: 30px 20px;
     width: 100%;
     gap: 15px;
@@ -16,14 +15,12 @@
 }
 .hero-img{
     width: 50%;
-    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
 .hero-img img{
-    /* height: 100%; */
-    width: 800px;
+    height: 100%;
 }
 /* end of hero */
 
@@ -56,38 +53,12 @@
 .activities{
     padding: 30px 20px;
 }
-.activity-card-row{
+.card-row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.card{
-    border: 0 !important;
-}
-.card-parent{
-    width: 23%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 0px !important;
-    margin: 16px 8px 8px 0px;
-}
-.card-image{
-    height: 260px;
-    display: flex;
-}
-.card-image img{
-    object-fit: cover;
-}
-.card-body{
-    padding: 1 !important;
-    margin: 0 !important;
-}
-.card-body h1{
-    font-size: 28px; 
-}
-.card-body h2{
-    font-size: 16px;
-    color: var(--primary-color);
-}
+
 /* end of activities */
 
 /* Sign Up Dialog Modal */
@@ -226,7 +197,7 @@
       }
 }
 @media (max-width: 500px) {
-    .activity-card-row{
+    .card-row{
         justify-content: center;
     }
     .card-parent {

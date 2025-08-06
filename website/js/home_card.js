@@ -6,7 +6,7 @@ Promise.all([
   const allActivities = [...activities1, ...activities2]; // Combine both arrays
   const row = document.getElementById('activity-row');
 
-  allActivities.forEach(activity => {
+  allActivities.slice(0, 4).forEach(activity => {
     const card = document.createElement('div');
     card.className = 'card-parent';
     card.innerHTML = `

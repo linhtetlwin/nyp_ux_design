@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="../js/reusable_widgets/nav_bar.js"></script>
     <script src="../js/reusable_widgets/footer.js"></script>
+    <script src="../js/events/recent_event_card.js"></script>
+    <script src="../js/events/upcoming_event_card.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </head>
@@ -17,61 +19,15 @@
 
   <main>
     <!-- Section for recent events -->
-    <section class="event-section">
-      <h2>Recent events</h2>
-      <div class="event-grid scrollable">
-        <!-- Only 3 event cards below ... -->
-        <div class="event-card">
-          <div class="image-placeholder"></div>
-          <div class="event-card-text">
-            <strong>National Day Parade 2025</strong>
-            <p>Helping in the national day parade and cheering the crowd</p>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="image-placeholder"></div>
-          <div class="event-card-text">
-            <strong>Primers Orientation Camp 2025</strong>
-            <p>Get to know fellow schoolmates through fun bonding activities!</p>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="image-placeholder"></div>
-          <div class="event-card-text">
-            <strong>Community Service: Necessity Shopping for the elderly</strong>
-            <p>Help elderly with mobility issues by getting their daily necessities</p>
-          </div>
-        </div>
-      </div>
+    <section class="event-section ">
+      <h1>Upcoming events</h1>
+      <div id="upcoming-event-cards" class="card-row" ></div>
     </section>
 
-    <!-- Section for upcoming events -->
-    <section class="event-section">
-      <h2>Upcoming events</h2>
-      <div class="event-grid scrollable">
-        <!-- Only 3 event cards below ... -->
-        <div class="event-card">
-          <div class="image-placeholder"></div>
-          <div class="event-card-text">
-            <strong>Boys Brigade Share A Gift</strong>
-            <p>Join us to give back to the community!</p>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="image-placeholder"></div>
-          <div class="event-card-text">
-            <strong>National Day Parade 2025</strong>
-            <p>Helping in the national day parade and cheering the crowd</p>
-          </div>
-        </div>
-        <div class="event-card">
-          <div class="image-placeholder"></div>
-          <div class="event-card-text">
-            <strong>Primers Orientation Camp 2025</strong>
-            <p>Get to know fellow schoolmates through fun bonding activities!</p>
-          </div>
-        </div>
-      </div>
+    <!-- Section for recent events -->
+    <section class="event-section ">
+      <h1>Recent events</h1>
+      <div id="recent-event-cards" class="card-row" ></div>
     </section>
 
     <!-- Section for event details with enroll/withdraw buttons -->

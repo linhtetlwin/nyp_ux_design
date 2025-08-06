@@ -1,7 +1,5 @@
 /* This css file contains color variables, font family, nav bar, and footer. */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&display=swap');
-
 /* color variables */
 :root {
   --primary-color: #BF7730;
@@ -20,6 +18,9 @@ a{
 }
 h1{
     color: var(--primary-color) !important;
+}
+img{
+  object-fit: contain;
 }
 
 /*start of nav bar */
@@ -77,6 +78,36 @@ h1{
   background-color: var(--bg-color) !important;
 }
 /*end of nav bar */
+
+/* start of card */
+.card{
+    border: 0 !important;
+}
+.card-parent{
+    width: 23%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0px !important;
+    margin: 16px 8px 8px 0px;
+}
+.card-image{
+    height: 160px;
+    display: flex;
+}
+.card-image img{
+    object-fit: cover;
+}
+.card-body{
+    padding: 1 !important;
+    margin: 0 !important;
+}
+.card-body h1{
+    font-size: 28px; 
+}
+.card-body h2{
+    font-size: 16px;
+    color: var(--primary-color);
+}
+/* end of card */
 
 /* start of footer */
 footer{
