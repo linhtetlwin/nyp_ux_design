@@ -139,10 +139,6 @@ nav a {
     background-color: var(--primary-color);
 }
 
-
-
-
-
 /* Accomplishments Section styles */
 .timeline-section {
     position: relative; /* makes it the reference for absolute children */
@@ -204,10 +200,6 @@ nav a {
     margin-bottom: 10px;
     
   }
-
-
-
-
 
 
 /* Responsive: 2 per row on small screens */
