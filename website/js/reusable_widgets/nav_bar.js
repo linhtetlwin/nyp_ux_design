@@ -1,12 +1,25 @@
-// For reusing nav bar 
-// run code as soon as web page is loaded 
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("navbar-container");
+
   if (container) {
-    fetch("https://linhtetlwin.github.io/nyp_ux_design_assignment/nav_bar.html")
+    fetch("../html/reusable_widgets/nav_bar.html")
       .then(response => response.text())
       .then(data => {
         container.innerHTML = data;
+
+
+        const joinBtn = document.getElementById('joinBtn');
+        const profileIcon = document.getElementById('profileIcon');
+
+
+
+        joinBtn.addEventListener('click', () => {
+          joinBtn.style.display = 'none';
+          profileIcon.style.display = 'inline';
+
+        });
+
+
       })
       .catch(error => {
         console.error("Error loading navbar:", error);

@@ -66,6 +66,14 @@ h1{
   left: 0;
   background-color: var(--bg-color) !important; 
 }
+#profileIcon{
+  display: none; 
+  font-size: 40px; 
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--bg-color) !important;
+}
 /*end of nav bar */
 
 /* start of footer */
