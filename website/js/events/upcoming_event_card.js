@@ -1,3 +1,5 @@
+// This code reads the contents of upcoming_activities.json and creates previous activity cards in events.html
+
 fetch('../json/upcoming_activities.json')
   .then(response => response.json())
   .then(activities => {

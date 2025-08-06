@@ -1,3 +1,4 @@
+// This js code pastes the content of nav_bar.html in the container of id navbar-container
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("navbar-container");
 
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const profileIcon = document.getElementById('profileIcon');
 
 
-
+        // This is for CTA button 
         joinBtn.addEventListener('click', () => {
           joinBtn.style.display = 'none';
           profileIcon.style.display = 'inline';
