@@ -1,5 +1,5 @@
 // This code reads the contents of upcoming_activities.json and previous_activities.json
-// and creates four activity cards in the home page
+// and creates four activity cards in home.html
 Promise.all([
   fetch('../json/upcoming_activities.json').then(res => res.json()),
   fetch('../json/previous_activities.json').then(res => res.json())
