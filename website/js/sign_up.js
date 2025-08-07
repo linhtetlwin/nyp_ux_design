@@ -95,10 +95,15 @@ document.addEventListener('DOMContentLoaded', function () {
             isValid = false;
         }
 
+        const joinBtn = document.getElementById('joinUsBtn');
+        const profileIcon = document.getElementById('profileIcon');
+        console.log(joinBtn, profileIcon)
         if (isValid) {
             alert('Thank you for signing up!');
             closeModalFunc();
             signUpForm.reset();
+            joinBtn.style.display = 'none';
+            profileIcon.style.display = 'inline';
         } 
     });
 });
