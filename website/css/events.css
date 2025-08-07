@@ -55,6 +55,17 @@ section{
   flex: 1;
   min-width: 200px;
 }
+.image-placeholder.large.b {
+  background-image: url('../images/home/bbsg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.image-placeholder.large.c {
+  background-image: url('../images/home/ndp.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 .enroll {
   background-color: #c2762b;
