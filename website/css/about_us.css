@@ -1,14 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #f9f4ef;
-  color: #222;
-}
 
 /* Header styles */
 header {
@@ -26,56 +15,6 @@ header {
     flex-direction: column;    
 }
 
-/* Clickable NYP Primers logo */
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #c2762b;
-  text-decoration: none;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.logo:hover {
-  opacity: 0.7;
-}
-
-/* Decorative cube for logo (optional) */
-.curve-logo {
-  font-size: 1.5rem;
-  transform: rotate(90deg);
-  display: inline-block;
-  margin-right: 0.4rem;
-}
-
-/* Navigation styles */
-nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: 500;
-}
-
-/* Clickable profile icon */
-.profile-icon {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background: url('profile.svg') center/cover no-repeat; /* Replace with your profile icon path */
-  border-radius: 50%;
-  margin-left: 16px;
-  cursor: pointer;
-  transition: box-shadow 0.2s;
-}
-
-.profile-icon:hover {
-  box-shadow: 0 0 8px #aaa;
-}
 
 /* Who We Are section styles */
 .who-we-are {

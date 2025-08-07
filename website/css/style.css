@@ -20,7 +20,7 @@ h1{
     color: var(--primary-color) !important;
 }
 img{
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 /*start of nav bar */
@@ -257,16 +257,59 @@ footer h1, footer p, footer ul{
   gap: 1rem; 
   justify-content: center;
 }
+/* responsive design for event cards */
+@media (max-width: 1173px) {
+      .hero {
+        height: 500px;
+      }
+}
+@media (max-width: 900px) {
+    .card-parent {
+        width: 43%;
+      }
+      .card-image{
+        height: 290px;
+      }
+      
+}
+@media (max-width: 800px) {
+      .hero {
+        flex-direction: column-reverse;
+        padding: 0px 0px 30px 0px;
+        height: 800px;
+      }
+      .hero-img, .content{
+        width: 100%;
+      }
+      .content{
+        padding: 0px 20px;
+      }
+      .activities{
+        padding: 0px 20px 30px 20px;
+      }
+      .card-parent{
+        width: 45%;
+      }
+}
 @media (max-width: 500px) {
-  .personal-details div{
-    width: 100%;
-  }
-  footer{
-    flex-direction: column;
-  }
-  footer .questions, footer .social-media{
-    justify-content: flex-start;
-    height: 100px;
-  }
+    .card-row{
+        justify-content: center;
+    }
+    .card-parent {
+        width: 100%;
+    }
+    .card-image{
+      height: 290px;
+    }    
+    .personal-details div{
+      width: 100%;
+    }
+    footer{
+      flex-direction: column;
+    }
+    footer .questions, footer .social-media{
+      justify-content: flex-start;
+      height: 100px;
+    } 
 }
 /* end of footer */
