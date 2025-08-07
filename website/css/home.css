@@ -1,32 +1,4 @@
-/* start of hero */
-.hero{
-    height: 450px; 
-    padding: 30px 20px;
-    width: 100%;
-    gap: 15px;
-    justify-content: space-between;
-    display: flex;
-}
-.content{
-    width: 45%;
-    display: flex;
-    justify-content: space-between;  
-    flex-direction: column;    
-}
-.hero-img {
-    width: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
 
-.hero-img img {
-    width: 100%;
-    height: auto;       
-}
-
-/* end of hero */
 
 /* start of motto */
 .motto{

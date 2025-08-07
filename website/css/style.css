@@ -20,7 +20,7 @@ h1{
     color: var(--primary-color) !important;
 }
 img{
-  /* object-fit: contain; */
+  object-fit: contain;
 }
 
 /*start of nav bar */
@@ -213,6 +213,36 @@ img{
 }
 /* end of Sign Up Dialog Modal */
 
+/* start of hero */
+.hero{
+    height: 450px; 
+    padding: 30px 20px;
+    width: 100%;
+    gap: 15px;
+    justify-content: space-between;
+    display: flex;
+}
+.content{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;  
+    flex-direction: column;    
+}
+.hero-img {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.hero-img img {
+    width: auto;
+    height: 145%;       
+}
+
+/* end of hero */
+
 /* start of footer */
 footer{
   width: 100%;
@@ -257,7 +287,9 @@ footer h1, footer p, footer ul{
   gap: 1rem; 
   justify-content: center;
 }
-/* responsive design for event cards */
+/* end of footer */
+
+
 @media (max-width: 1173px) {
       .hero {
         height: 500px;
@@ -312,4 +344,3 @@ footer h1, footer p, footer ul{
       height: 100px;
     } 
 }
-/* end of footer */

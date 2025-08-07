@@ -40,8 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
             error.textContent = message; // Show error message below
         }
 }
-
+console.log(signUpForm)
         signUpForm.addEventListener('submit', function(event) {
+            console.log("hello")
         event.preventDefault();
 
         let isValid = true;
