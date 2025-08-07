@@ -147,6 +147,8 @@ img{
 }
 .emergency-contact-details div{
     width: 100%;
+    display: flex;
+    flex-direction: column;  
 }
 
 .signup-form label {
@@ -155,7 +157,7 @@ img{
     color: var(--primary-color);
 }
 
-.signup-form input {
+.signup-form input, .signup-form select {
     width: 100%;
     padding: 0.7rem 1rem;
     margin-bottom: 20px;
@@ -168,7 +170,7 @@ img{
     outline: none;
     border: 1px solid var(--primary-color);
 }
-.signup-form input.invalid {
+.signup-form .invalid {
     border: 1px solid red;
 }
 .error-message {

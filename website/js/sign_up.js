@@ -1,7 +1,5 @@
-// This is for 'Join Us' buttton
-// when clicked, the sign up modal appears
-
-document.addEventListener('DOMContentLoaded', function() {
+// This is for 'Join Us' button — when clicked, the sign up modal appears
+document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('signUpModal');
     const closeModal = document.getElementById('closeModal');
     const closeDialog = document.getElementById('closeDialog');
@@ -17,32 +15,38 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = '';
     }
 
-    document.addEventListener('click', function(event) {
+    function showError(input, message) {
+        input.classList.add('invalid'); // Adds red border
+        const error = input.parentElement.querySelector('.error-message');
+        console.log(error)
+        if (error) {
+            error.textContent = message; // Show error message below
+        }
+    }
+
+    // Open modal on button click
+    document.addEventListener('click', function (event) {
         if (event.target.closest('.open-signup-modal')) {
             openModal();
         }
     });
 
+    // Close modal on X buttons
     if (closeModal) closeModal.addEventListener('click', closeModalFunc);
     if (closeDialog) closeDialog.addEventListener('click', closeModalFunc);
 
-    window.addEventListener('click', function(event) {
+    // Close modal on clicking outside
+    window.addEventListener('click', function (event) {
         if (event.target === modal) {
             closeModalFunc();
         }
     });
 
-    
-    function showError(input, message) {
-        input.classList.add('invalid'); // Adds red border
-        const error = input.parentElement.querySelector('.error-message');
-        if (error) {
-            error.textContent = message; // Show error message below
-        }
-}
-console.log(signUpForm)
-        signUpForm.addEventListener('submit', function(event) {
-            console.log("hello")
+    // Form submission handling
+    console.log(signUpForm);
+
+    signUpForm.addEventListener('submit', function (event) {
+        console.log("🟢 Submit fired");
         event.preventDefault();
 
         let isValid = true;
@@ -58,6 +62,12 @@ console.log(signUpForm)
         const nameInput = document.getElementById('name');
         if (nameInput.value.trim() === '') {
             showError(nameInput, 'Name is required');
+            isValid = false;
+        }
+
+        const schoolInput = document.getElementById('school');
+        if (schoolInput.value.trim() === '') {
+            showError(schoolInput, 'School is required');
             isValid = false;
         }
 
@@ -80,7 +90,7 @@ console.log(signUpForm)
         }
 
         const emergencyNumber = document.getElementById('emergencyNumber');
-        if (phoneInput.value.trim().length !== 8) {
+        if (emergencyNumber.value.trim().length !== 8) {
             showError(emergencyNumber, 'Emergency contact number must be 8 digits');
             isValid = false;
         }
@@ -89,20 +99,6 @@ console.log(signUpForm)
             alert('Thank you for signing up!');
             closeModalFunc();
             signUpForm.reset();
-        }
+        } 
     });
-
-        signUpForm.addEventListener('submit', function(event) {
-        if (isValid === true) {
-            event.preventDefault();
-            alert('Thank you for signing up!');
-            closeModalFunc();
-            signUpForm.reset();
-        }
-        else {
-            alert('Please fix the errors before submitting.');
-        }
-    });
-
 });
-

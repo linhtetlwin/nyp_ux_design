@@ -68,17 +68,28 @@
 
                         <div>
                             <label for="school">School</label>
-                            <input type="text" id="school" name="school"  placeholder="School">
+                            <select id="school" name="school">
+                                <option value="" disabled selected hidden>Select your school</option>
+                                <option value="SBM">School of Business</option>
+                                <option value="SEG">School of Engineering</option>
+                                <option value="SIT">School of Information Technology</option>
+                                <option value="SHSS">School of Health & Social Sciences</option>
+                                <option value="SDM">School of Design</option>
+                            </select>
+                            <small class="error-message"></small>
                         </div>
+
 
                         <div>
                             <label for="admission">Admission number</label>
                             <input type="text" id="admission" name="admission"  placeholder="Admission number">
+                            <small class = "error-message"></small>
                         </div>
 
                         <div>
                             <label for="phone">Phone number</label>
                             <input type="text" id="phone" name="phone"  placeholder="Phone number">  
+                            <small class = "error-message"></small>
                         </div>
                     </div>
 
@@ -89,11 +100,13 @@
                         <div>
                             <label for="emergencyName">Emergency contact name</label>
                             <input type="text" id="emergencyName" name="emergencyName"  placeholder="Emergency contact name">
+                            <small class = "error-message"></small>
                         </div>
 
                         <div>
                             <label for="emergencyNumber">Emergency contact number</label>
                             <input type="text" id="emergencyNumber" name="emergencyNumber"  placeholder="Emergency contact number">
+                            <small class = "error-message"></small>
                         </div>
                     </div>
                 </div>
