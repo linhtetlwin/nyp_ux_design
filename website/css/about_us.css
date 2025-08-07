@@ -127,6 +127,61 @@ nav a {
   margin-bottom: 2rem;
   background-color: var(--primary-color);
 }
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: #ccc; /* Fallback color */
+  margin-bottom: 10px;
+}
+.circle-profile {
+  background-color:var(--primary-color);
+  
+}
+.circle-profile p {
+  background-color:var(--primary-color)
+}
+.circle-profile span {
+  background-color:var(--primary-color)
+  color= var(--secondary-color);
+}
+.circle-profile strong {
+  background-color:var(--primary-color)
+}
+/* Target each circle individually based on order */
+.exco-grid .circle-profile:nth-of-type(1) .circle {
+  background-image: url('../images/exco/Exco Photos/Kai\ Yi.JPG');
+}
+
+.exco-grid .circle-profile:nth-of-type(2) .circle {
+  background-image: url('../images/exco/Exco Photos/Jaedyn.JPG');
+}
+
+.exco-grid .circle-profile:nth-of-type(3) .circle {
+  background-image: url('../images/exco/Exco Photos/Luke.JPG');
+}
+
+.exco-grid .circle-profile:nth-of-type(4) .circle {
+  background-image: url('../images/exco/Exco Photos/Jin\ Xuan.JPG');
+}
+
+.exco-grid .circle-profile:nth-of-type(5) .circle {
+  background-image: url('../images/exco/Exco Photos/Jing\ Xian.JPG');
+}
+
+.exco-grid .circle-profile:nth-of-type(6) .circle {
+  background-image: url('../images/exco/Exco Photos/Miguel.JPG');
+}
+
+.exco-grid .circle-profile:nth-of-type(7) .circle {
+  background-image: url('../images/exco/Exco Photos/Samuel.JPG');
+}
+
+.exco-grid .circle-profile:nth-of-type(8) .circle {
+  background-image: url('../images/exco/Exco Photos/Yan\ Yan.JPG');
+}
 
 /* Grid layout for exco profiles */
 .exco-grid {
@@ -144,6 +199,8 @@ nav a {
     position: relative; /* makes it the reference for absolute children */
     padding: 50px 0;     /* optional spacing */
     background-color: var(--bg-color);
+    display:flex;
+    justify-content: center;
 }
   .timeline {
     position: relative;
