@@ -139,6 +139,7 @@ img{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .personal-details div{
     width: 47%;
     display: flex;
@@ -166,6 +167,15 @@ img{
 .signup-form input:focus{
     outline: none;
     border: 1px solid var(--primary-color);
+}
+.signup-form input.invalid {
+    border: 1px solid red;
+}
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -15px;
+    margin-bottom: 10px;
 }
 .signup-form button[type="submit"] {
     color: white;    
