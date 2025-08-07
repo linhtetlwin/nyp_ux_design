@@ -1,0 +1,65 @@
+main{
+    padding: 30px 20px;
+}
+.personal-info{
+    display: flex;
+    height: 175px;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+.personal-info-textfield-values, .emergency-contact-textfield-values{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 25px;
+    /* border: 1px solid red; */
+}
+.personal-info-textfield-values div, .emergency-contact-textfield-values div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.filler{
+    height: 25.6px;
+}
+.profile i{
+    font-size: 175px;  
+}
+.key{
+    color: var(--accent-color);
+}
+.value{
+    color: var(--primary-color);
+    text-align: right;
+}
+@media (max-width: 850px) {
+    .personal-info{
+        gap: 10px;
+    }   
+}
+@media (max-width: 745px) {
+    .personal-info{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .personal-info-textfield-values, .emergency-contact-textfield-values{
+        width: 50%;
+    }
+    .emergency-contact-textfield-values{
+        width: 65%;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 506px) {
+    .personal-info{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }   
+    .profile{
+        align-self: center;
+    }
+    .personal-info-textfield-values, .emergency-contact-textfield-values{
+        width: 100%;
+    }
+}
