@@ -3,76 +3,82 @@ main {
   padding: 30px;
 }
 .card-row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2%;
 }
 section{
   margin-bottom: 30px;
 }
-
-.event-card .image-placeholder {
-  background-color: #ddd;
-  height: 120px;
-}
-
-.event-card-text {
-  padding: 0.8rem;
-  border-top: 2px solid var(--primary-color);
-}
-
-.event-card-text strong {
-  color: var(--primary-color);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-/* Event Details */
-.event-details {
+/* start of event details */
+.event-parent{
+  margin-top: 50px;
   display: flex;
-  gap: 2rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
 }
-
-.event-details .details {
-  flex: 1;
-  min-width: 280px;
+.event{
+  height: 450px; 
+  width: 100%;
+  gap: 15px;
+  justify-content: space-between;
+  display: flex;
+  padding: 0;
 }
-
-.event-details .image-placeholder.large {
-  background-color: #ddd;
-  height: 200px;
-  flex: 1;
-  min-width: 200px;
+.event-info{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;  
+  flex-direction: column;
 }
-.image-placeholder.large.b {
-  background-image: url('../images/home/bbsg.jpg');
-  background-size: cover;
-  background-position: center;
+.event-info .key{
+  opacity: 50%;
+  font-size: 14px;
 }
-
-.image-placeholder.large.c {
-  background-image: url('../images/home/ndp.jpg');
-  background-size: cover;
-  background-position: center;
+.event-info .value{
+  color: var(--primary-color);
 }
-
-.enroll {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.5rem 1.2rem;
-  border: none;
-  cursor: pointer;
-  margin-right: 1rem;
+.event-content p{
+  text-align: justify;
 }
-
+.event-img{
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.event-img img{
+  width: auto;
+  height: 145%;   
+}
+.button-group{
+  display: flex;
+  gap: 20px;
+}
 .withdraw {
-  background-color: #ccc;
-  color: #555;
-  padding: 0.5rem 1.2rem;
+  background-color: #ccc !important;
+  color: #555 !important;
   border: none;
   cursor: not-allowed;
 }
+@media (max-width: 1173px) {
+      .event {
+        height: 560px;
+      }
+}
+@media (max-width: 800px) {
+      .event {
+        flex-direction: column-reverse;
+        padding: 0px 0px 30px 0px;
+        height: 800px;
+      }
+      .event-img, .event-info{
+        width: 100%;
+      }
+}
+/* end of event details */
+
+
 
