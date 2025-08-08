@@ -1,13 +1,13 @@
 main{
-    padding: 0px 20px;
+    padding: 30px 20px;
 }
 section{
-    padding: 30px 0px;
+    padding-bottom: 30px;
 }
 /* start of personal info */
 .personal-info{
     display: flex;
-    gap: 80px;
+    gap: 150px;
 }
 .personal-info-textfield-values, .emergency-contact-textfield-values{
     display: flex;
@@ -34,11 +34,6 @@ section{
     font-weight: bold;
 }
 @media (max-width: 850px) {
-    .personal-info{
-        gap: 10px;
-    }   
-}
-@media (max-width: 770px) {
     .personal-info{
         justify-content: space-between;
         flex-wrap: wrap;
@@ -68,8 +63,8 @@ section{
 /* end of personal info */
 
 /* start of cca point chart */
-.cca-point h1{
-    margin-bottom: 30px;
+.cca-point{
+    padding-top: 30px;
 }
 .cca-point-chart{
     display: flex;
@@ -154,7 +149,13 @@ section{
     color: var(--primary-color);
     margin: 0;
 }
-
+.total-cca-points{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
 @media (max-width: 1000px) {
     .doughnut-wrapper {
       flex: 0 0 33.33%; /* 3 per row (100 / 3 = 33.33%) */
@@ -164,3 +165,10 @@ section{
     }
 }
 /* end of cca point chart */
+
+/* start of enrolled events and previous events */
+.table{
+    --bs-table-bg: var(--bg-color) !important;
+    --bs-table-color: var(--accent-color) !important;
+}
+/* end of enrolled events and previous events */
