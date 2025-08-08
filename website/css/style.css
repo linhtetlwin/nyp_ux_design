@@ -111,8 +111,8 @@ img{
 /* end of card */
 
 
-/* start of Sign Up Dialog Modal */
-.signup-form {
+/* start of join us modal */
+.joinUs-form {
     display: flex;
     flex-direction: column;
 }
@@ -130,7 +130,7 @@ img{
     background-color:var(--primary-color);
 }
 
-.signup-form .form-body {
+.joinUs-form .form-body {
     display: flex;
     flex-direction: column;
     padding: 20px 20px 0px 20px;
@@ -152,13 +152,13 @@ img{
     flex-direction: column;  
 }
 
-.signup-form label {
+.joinUs-form label {
     font-size: 1rem;
     margin-bottom: 0.3rem;
     color: var(--primary-color);
 }
 
-.signup-form input, .signup-form select {
+.joinUs-form input, .joinUs-form select {
     width: 100%;
     padding: 0.7rem 1rem;
     margin-bottom: 20px;
@@ -167,11 +167,11 @@ img{
     background-color: var(--bg-color);
     font-size: 16px;
 }
-.signup-form input:focus , .signup-form select:focus{
+.joinUs-form input:focus , .joinUs-form select:focus{
     outline: none;
     border: 1px solid var(--primary-color);
 }
-.signup-form .invalid {
+.joinUs-form .invalid {
     border: 1px solid red;
 }
 .error-message {
@@ -180,7 +180,7 @@ img{
     margin-top: -15px;
     margin-bottom: 10px;
 }
-.signup-form button[type="submit"] {
+.joinUs-form button[type="submit"] {
     color: white;    
     background-color: var(--primary-color);    
     border-color: var(--primary-color);
@@ -192,7 +192,7 @@ img{
     width: 100% !important;
     height: 45px;
 }
-.signup-form button[type="submit"]:hover {
+.joinUs-form button[type="submit"]:hover {
     background: #a05c1f;
 }
 .form-button-container{
@@ -214,7 +214,7 @@ img{
     border-radius: 10px;
     overflow: hidden;
 }
-/* end of Sign Up Dialog Modal */
+/* end of join us modal */
 
 /* start of hero */
 .hero{

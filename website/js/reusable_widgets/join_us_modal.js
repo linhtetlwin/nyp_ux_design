@@ -10,10 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         container.innerHTML = data;
 
         // Now that the modal HTML is inserted, attach the modal-related JS
-        const modal = document.getElementById('signUpModal');
-        const closeModal = document.getElementById('closeModal');
-        const closeDialog = document.getElementById('closeDialog');
-        const signUpForm = document.getElementById('signUpForm');
+        const modal = document.getElementById('joinUsModal');
+        const joinUsForm = document.getElementById('joinUsForm');
 
         function openModal() {
           modal.style.display = 'block';
@@ -35,14 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Open modal on button click
         document.addEventListener('click', function (event) {
-          if (event.target.closest('.open-signup-modal')) {
+          if (event.target.closest('.openJoinUsModal')) {
             openModal();
           }
         });
 
         // Close modal
-        if (closeModal) closeModal.addEventListener('click', closeModalFunc);
-        if (closeDialog) closeDialog.addEventListener('click', closeModalFunc);
 
         window.addEventListener('click', function (event) {
           if (event.target === modal) {
@@ -50,12 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
 
-        if (signUpForm) {
-          signUpForm.addEventListener('submit', function (event) {
+        if (joinUsForm) {
+          joinUsForm.addEventListener('submit', function (event) {
             event.preventDefault();
             let isValid = true;
 
-            const inputs = signUpForm.querySelectorAll('input');
+            const inputs = joinUsForm.querySelectorAll('input');
             inputs.forEach(input => {
               input.classList.remove('invalid');
               const error = input.parentElement.querySelector('.error-message');
@@ -102,9 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const profileIcon = document.getElementById('profileIcon');
 
             if (isValid) {
-              alert('Thank you for signing up!');
+              alert('Thank you for Joining Us!');
               closeModalFunc();
-              signUpForm.reset();
+              joinUsForm.reset();
               if (joinBtn) joinBtn.style.display = 'none';
               if (profileIcon) profileIcon.style.display = 'inline';
             }
