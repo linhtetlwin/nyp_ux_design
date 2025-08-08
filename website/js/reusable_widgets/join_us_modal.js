@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("modal-container");
 
   if (container) {
-    fetch("reusable_widgets/join_us_modal.html")
+    fetch("https://linhtetlwin.github.io/nyp_ux_design/website/html/reusable_widgets/join_us_modal.html")
       .then(response => response.text())
       .then(data => {
         container.innerHTML = data;

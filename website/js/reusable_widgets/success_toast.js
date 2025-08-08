@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("success-toast-container");
   if (container) {
-    fetch("reusable_widgets/success_toast.html")
+    fetch("https://linhtetlwin.github.io/nyp_ux_design/website/html/reusable_widgets/success_toast.html")
       .then(response => response.text())
       .then(data => {
         container.innerHTML = data;
