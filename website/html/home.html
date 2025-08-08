@@ -10,6 +10,7 @@
     <script src="../js/reusable_widgets/nav_bar.js"></script>
     <script src="../js/reusable_widgets/footer.js"></script>
     <script src="../js/reusable_widgets/join_us_modal.js"></script>
+    <script src="../js/reusable_widgets/success_toast.js"></script>
     <script src="../js/home/home_card.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> 
@@ -24,14 +25,7 @@
     <!-- end of Sign Up Dialog Modal -->
 
     <!-- start of toast (to show if successfully joined) -->
-    <div class="toast align-items-center position-fixed bottom-0 end-0 p-3 bg-success" id="successToast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex bg-success">
-        <div class="toast-body bg-success text-white">
-          Warmly Welcome! You are now officially a member of NYP Primers!
-        </div>
-        <button type="button" class="btn-close me-2 m-auto bg-success" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-    </div>
+    <div id="success-toast-container"></div>
     <!-- end of toast -->
 
     <!-- start of Hero -->
