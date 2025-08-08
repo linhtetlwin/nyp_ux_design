@@ -157,18 +157,12 @@ img{
     margin-bottom: 0.3rem;
     color: var(--primary-color);
 }
-#school option {
-  background-color: var(--secondary-color); 
-  color: #000; 
-}
-
-
 
 .signup-form input, .signup-form select {
     width: 100%;
     padding: 0.7rem 1rem;
     margin-bottom: 20px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #bbbbbb;
     border-radius: 10px;
     background-color: var(--bg-color);
     font-size: 16px;
@@ -212,8 +206,8 @@ img{
 }
 .modal-content {
     position: absolute;
-  top: 45%;
-  transform: translateY(-50%);
+    top: 45%;
+    transform: translateY(-50%);
     margin: 5vh auto;
     max-width: 900px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
