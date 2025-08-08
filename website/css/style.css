@@ -6,7 +6,7 @@
   --primary-color: #BF7730;
   --accent-color: #2f4858;
   --secondary-color: #ffffff;
-  --bg-color: #fff6ea;
+  --bg-color: #F4F0EB;
 }
 *{
     font-family: "Inter", sans-serif;
@@ -171,7 +171,7 @@ img{
     margin-bottom: 20px;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     font-size: 16px;
 }
 .signup-form input:focus , .signup-form select:focus{
