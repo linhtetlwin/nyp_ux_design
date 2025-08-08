@@ -83,8 +83,8 @@ section{
 @media (max-width: 800px) {
       .event {
         flex-direction: column-reverse;
-        padding: 0px 0px 30px 0px;
-        height: 800px;
+        padding: 0px 0px 30px 0px !important;
+        height: 800px !important;
       }
       .event-img, .event-info{
         width: 100%;
