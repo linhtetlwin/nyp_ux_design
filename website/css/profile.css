@@ -1,18 +1,18 @@
 main{
-    padding: 30px 20px;
+    padding: 0px 20px;
 }
+section{
+    padding: 30px 0px;
+}
+/* start of personal info */
 .personal-info{
     display: flex;
-    height: 175px;
     gap: 80px;
-    margin-bottom: 20px;
 }
 .personal-info-textfield-values, .emergency-contact-textfield-values{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     gap: 25px;
-    /* border: 1px solid red; */
 }
 .personal-info-textfield-values div, .emergency-contact-textfield-values div{
     display: flex;
@@ -37,18 +37,19 @@ main{
         gap: 10px;
     }   
 }
-@media (max-width: 745px) {
+@media (max-width: 770px) {
     .personal-info{
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 30px;
     }
-    .personal-info-textfield-values, .emergency-contact-textfield-values{
+    .personal-info-textfield-values{
         width: 50%;
     }
+}
+@media (max-width: 644px) {
     .emergency-contact-textfield-values{
-        width: 65%;
-        justify-content: space-between;
+        width: 70%;
     }
 }
 @media (max-width: 506px) {
@@ -63,3 +64,47 @@ main{
         width: 100%;
     }
 }
+/* end of personal info */
+
+/* start of cca point chart */
+.cca-point h1{
+    margin-bottom: 30px;
+}
+.cca-point-chart{
+    display: flex;
+    justify-content: space-between;
+}
+.doughnut-chart {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+        var(--primary-color) 0% 40%,   /* Green slice (40%) */
+        #d8d8d8 40% 100%     /* Light gray remainder */
+  );
+  position: relative;
+}
+.doughnut-chart::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: var(--bg-color);
+}
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: var(--bg-color);
+  pointer-events: none;
+}
+/* end of cca point chart */
