@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="../js/reusable_widgets/nav_bar.js"></script>
     <script src="../js/reusable_widgets/footer.js"></script>
+    <script src="../js/reusable_widgets/join_us_modal.js"></script>
     <script src="../js/events/recent_event_card.js"></script>
     <script src="../js/events/upcoming_event_card.js"></script>
     <script src="../js/sign_up.js"></script>
@@ -16,62 +17,68 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="navbar-container"></div>
+    <!-- start of nav bar -->
+    <div id="navbar-container"></div>
+    <!-- end of nav bar -->
 
-  <main>
-    <!-- Section for recent events -->
-    <section class="event-section ">
-      <h1 id="upcoming-event">Upcoming events</h1>
-      <div id="upcoming-event-cards" class="card-row" ></div>
-    </section>
+    <!-- Sign Up Dialog Modal -->
+    <div id="modal-container"></div>
+    <!-- end of Sign Up Dialog Modal -->
 
-    <!-- Section for recent events -->
-    <section class="event-section ">
-      <h1 id="recent-event">Recent Events</h1>
-      <div id="recent-event-cards" class="card-row" ></div>
-    </section>
-    <h1>Recent Events</h1>
-    <!-- Section for event details with enroll/withdraw buttons -->
-    <section class="event-details">
-      <div class="details">
-        <h4>National Day Parade</h4>
-        <p>Event Duration - 5th May to 9th August on Saturdays 9am to 5pm-</p>
-        <p>Event Location- Padang</p>
-        <p>CCA points - 12 points</p>
-        <p>Registration time - 3rd Feb to 28th April</p>
-        <p>Event description</p>
-        <p>Join Us for a 3month journey as we prepare for Singapore's National Day Parade 2025! </p>
-        <p>Open to all polytechnic students, this programme offers hands-on experience in performance, event planning, and backstage coordination. Be part of a national celebration while building leadership, teamwork, and creative skills.</p>
-        <!-- Buttons for enrolling or withdrawing from event -->
-        <button class="enroll">Enroll</button>
-        <button class="withdraw" disabled>Withdraw</button>
-      </div>
-      <div class="image-placeholder large c">
-        
-      </div>
-    </section>
+    <main>
+      <!-- Section for recent events -->
+      <section class="event-section ">
+        <h1 id="upcoming-event">Upcoming events</h1>
+        <div id="upcoming-event-cards" class="card-row" ></div>
+      </section>
 
-    <hr>
-    <h1>Upcoming Events</h1>
-    <!-- Another event details section (can be used for more info) -->
-    <section class="event-details">
-      <div class="details">
-        <h4>Boys Brigade Share A Gift</h4>
-        <p>Event time - 21 November  12am to 5pm</p>
-        <p>Event location - Bedok HDB estates</p>
-        <p>CCA points - 1</p>
-        <p>Event description</p>
-        <p>Open to all polytechnic students, this meaningful programme offers a hands-on experience in community outreach and volunteerism.</p>
-        <p>Take part in collecting, sorting, and delivering food donations to support families in need—while developing teamwork, empathy, and leadership skills.</p>
-        <button class="enroll">Enroll</button>
-        <button class="withdraw" disabled>Withdraw</button>
-      </div>
-      <div class="image-placeholder large b"></div>
-    </section>
-  </main>
+      <!-- Section for recent events -->
+      <section class="event-section ">
+        <h1 id="recent-event">Recent Events</h1>
+        <div id="recent-event-cards" class="card-row" ></div>
+      </section>
+      <h1>Recent Events</h1>
+      <!-- Section for event details with enroll/withdraw buttons -->
+      <section class="event-details">
+        <div class="details">
+          <h4>National Day Parade</h4>
+          <p>Event Duration - 5th May to 9th August on Saturdays 9am to 5pm-</p>
+          <p>Event Location- Padang</p>
+          <p>CCA points - 12 points</p>
+          <p>Registration time - 3rd Feb to 28th April</p>
+          <p>Event description</p>
+          <p>Join Us for a 3month journey as we prepare for Singapore's National Day Parade 2025! </p>
+          <p>Open to all polytechnic students, this programme offers hands-on experience in performance, event planning, and backstage coordination. Be part of a national celebration while building leadership, teamwork, and creative skills.</p>
+          <!-- Buttons for enrolling or withdrawing from event -->
+          <button class="enroll">Enroll</button>
+          <button class="withdraw" disabled>Withdraw</button>
+        </div>
+        <div class="image-placeholder large c">
 
-  <!-- start of footer -->
-    <div id="footer-container"></div>
-  <!-- end of footer -->
+        </div>
+      </section>
+
+      <hr>
+      <h1>Upcoming Events</h1>
+      <!-- Another event details section (can be used for more info) -->
+      <section class="event-details">
+        <div class="details">
+          <h4>Boys Brigade Share A Gift</h4>
+          <p>Event time - 21 November  12am to 5pm</p>
+          <p>Event location - Bedok HDB estates</p>
+          <p>CCA points - 1</p>
+          <p>Event description</p>
+          <p>Open to all polytechnic students, this meaningful programme offers a hands-on experience in community outreach and volunteerism.</p>
+          <p>Take part in collecting, sorting, and delivering food donations to support families in need—while developing teamwork, empathy, and leadership skills.</p>
+          <button class="enroll">Enroll</button>
+          <button class="withdraw" disabled>Withdraw</button>
+        </div>
+        <div class="image-placeholder large b"></div>
+      </section>
+    </main>
+
+    <!-- start of footer -->
+      <div id="footer-container"></div>
+    <!-- end of footer -->
 </body>
 </html>

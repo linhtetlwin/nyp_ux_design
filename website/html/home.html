@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="../js/reusable_widgets/nav_bar.js"></script>
     <script src="../js/reusable_widgets/footer.js"></script>
+    <script src="../js/reusable_widgets/join_us_modal.js"></script>
     <script src="../js/home/home_card.js"></script>
     <script src="../js/sign_up.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -18,6 +19,10 @@
     <!-- start of nav bar -->
     <div id="navbar-container"></div>
     <!-- end of nav bar -->
+
+    <!-- Sign Up Dialog Modal -->
+    <div id="modal-container"></div>
+    <!-- end of Sign Up Dialog Modal -->
 
     <!-- start of Hero -->
     <div class="hero">
@@ -48,75 +53,7 @@
     </div>
     <!-- end of Hero -->
 
-    <!-- Sign Up Dialog Modal -->
-    <div id="signUpModal" class="modal">
-        <div class="modal-content">
-            <form id="signUpForm" class="signup-form" method="post">
 
-                <div class="form-logo">
-                    <img src="../images/logo/nyp-primers-high-resolution-logo-grayscale-transparent.png" alt="NYP Primers Logo">
-                </div>
-
-                <div class="form-body">
-                    <div class="personal-details">
-                        <div>
-                            <label for="name">Full name*</label>
-                            <input type="text" id="name" name="name"  placeholder="Full name">
-                            <small class = "error-message"></small>
-                        </div>
-
-                        <div>
-                            <label for="school">School*</label>
-                            <select id="school" name="school">
-                                <option value="" disabled selected hidden>Select your school</option>
-                                <option value="SBM">School of Business and Management</option>
-                                <option value="SEG">School of Engineering</option>
-                                <option value="SIT">School of Information Technology</option>
-                                <option value="SHSS">School of Health & Social Sciences</option>
-                                <option value="SDM">School of Design and Media</option>
-                            </select>
-                            <small class="error-message"></small>
-                        </div>
-
-
-                        <div>
-                            <label for="admission">Admission Number*</label>
-                            <input type="text" id="admission" name="admission"  placeholder="Admission number">
-                            <small class = "error-message"></small>
-                        </div>
-
-                        <div>
-                            <label for="phone">Phone Number*</label>
-                            <input type="text" id="phone" name="phone"  placeholder="Phone number">  
-                            <small class = "error-message"></small>
-                        </div>
-                    </div>
-
-                    <!-- A divider between personal details and emergency contact details -->
-                    <hr style="color: var(--primary-color); margin: 10px 0px">
-
-                    <div class="emergency-contact-details">
-                        <div>
-                            <label for="emergencyName">Emergency Contact Name*</label>
-                            <input type="text" id="emergencyName" name="emergencyName"  placeholder="Emergency contact name">
-                            <small class = "error-message"></small>
-                        </div>
-
-                        <div>
-                            <label for="emergencyNumber">Emergency Contact Number*</label>
-                            <input type="text" id="emergencyNumber" name="emergencyNumber"  placeholder="Emergency contact number">
-                            <small class = "error-message"></small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-button-container">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!-- end of Sign Up Dialog Modal -->
 
     <!-- start of motto -->
      <div class="motto">

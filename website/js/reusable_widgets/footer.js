@@ -1,4 +1,4 @@
-// For reusing nav bar 
+// For reusing footer
 // This js code pastes the content of footer.html in the container of id footer-container
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("footer-container");

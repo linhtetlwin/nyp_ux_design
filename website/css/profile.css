@@ -4,6 +4,15 @@ main{
 section{
     padding-bottom: 30px;
 }
+
+/* normally, users can access the profile page only after joining the club, but this website lacks the backend to check if user has logged in 
+therefore, the nav bar will be hard coded to hide 'Join Us' button in profile.html  */
+#joinUsBtn{
+    display: none;
+}
+#profileIcon{
+    display: inline;
+}
 /* start of personal info */
 .personal-info{
     display: flex;
