@@ -231,6 +231,9 @@ img{
     justify-content: space-between;  
     flex-direction: column;    
 }
+.content p{
+  text-align: justify;
+}
 .hero-img {
     width: 50%;
     overflow: hidden;
@@ -295,11 +298,11 @@ footer h1, footer p, footer ul{
 
 @media (max-width: 1173px) {
       .hero {
-        height: 500px;
+        height: 560px;
       }
 }
 @media (max-width: 900px) {
-    .card-parent {
+      .card-parent {
         width: 43%;
       }
       .card-image{

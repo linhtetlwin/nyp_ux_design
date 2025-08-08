@@ -1,141 +1,56 @@
-
-/* Header styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 2rem;
-  background-color: #f9f4ef;
-}
-
-.content{
-    width: 45%;
-    display: flex;
-    justify-content: space-between;  
-    flex-direction: column;    
-}
-
-
-/* Who We Are section styles */
-.who-we-are {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-/* Placeholder image for Who We Are */
-.image-placeholder {
-  background-image: url('../images/home/aboutus.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 200px;   /* set your desired width */
-  height: 258px;
-  flex: 1;
-  min-width: 280px;
-  background-color: #ddd;
-}
-
-/* Content styles for Who We Are */
-.content {
-  flex: 2;
-  min-width: 280px;
-}
-
-.content h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.content p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-/* Exco Section styles */
+/* start of meet our exco*/
 .exco {
   background-color:var(--primary-color);
-  color: var(--bg-color);
+  color: var(--secondary-color);
   text-align: center;
-  padding: 2rem;
-  
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
-.exco h2 {
-  margin-bottom: 2rem;
+.exco h1 {
   background-color: var(--primary-color);
+  color: var(--secondary-color) !important;
 }
-.circle {
-  width: 100px;
-  height: 100px;
+.exco-member-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--primary-color) !important;
+}
+.exco-member{
+  flex: 0 0 25%; 
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.exco-member-photo{
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-color: var(--bg-color); /* Fallback color */
-  margin-bottom: 10px;
+  vertical-align: middle;
+  overflow: hidden;
 }
-.circle-profile {
-  background-color:var(--primary-color);
-  
+.exco-member-photo img{
+  width: 100%;
 }
-.circle-profile p {
-  background-color:var(--primary-color);
-  
+.exco-member-name, .exco-member-role{
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
 }
-.circle-profile span {
-  background-color:var(--primary-color);
-  color:var(--secondary-color);
-  opacity: 0.7;
-  
+@media (max-width: 850px) {
+    .exco-member {
+      flex: 0 0 50%; 
+    }
+    .exco-member-row{
+        row-gap: 20px;
+    }
 }
-.circle-profile strong {
-  background-color:var(--primary-color);
-  color:var(--bg-color);
-}
-/* Target each circle individually based on order */
-.exco-grid .circle-profile:nth-of-type(1) .circle {
-  background-image: url('../images/exco/Exco Photos/Kai\ Yi.JPG');
-}
-
-.exco-grid .circle-profile:nth-of-type(2) .circle {
-  background-image: url('../images/exco/Exco Photos/Jaedyn.JPG');
-}
-
-.exco-grid .circle-profile:nth-of-type(3) .circle {
-  background-image: url('../images/exco/Exco Photos/Luke.JPG');
-}
-
-.exco-grid .circle-profile:nth-of-type(4) .circle {
-  background-image: url('../images/exco/Exco Photos/Jin\ Xuan.JPG');
-}
-
-.exco-grid .circle-profile:nth-of-type(5) .circle {
-  background-image: url('../images/exco/Exco Photos/Jing\ Xian.JPG');
-}
-
-.exco-grid .circle-profile:nth-of-type(6) .circle {
-  background-image: url('../images/exco/Exco Photos/Miguel.JPG');
-}
-
-.exco-grid .circle-profile:nth-of-type(7) .circle {
-  background-image: url('../images/exco/Exco Photos/Samuel.JPG');
-}
-
-.exco-grid .circle-profile:nth-of-type(8) .circle {
-  background-image: url('../images/exco/Exco Photos/Yan\ Yan.JPG');
-}
-
-/* Grid layout for exco profiles */
-.exco-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    justify-items: center;
-    align-items: start;
-    margin: 2rem 0;
-    background-color: var(--primary-color);
-}
+/* end of meet our exco */
 
 /* Accomplishments Section styles */
 
@@ -230,33 +145,6 @@ header {
     
   }
 
-
-/* Responsive: 2 per row on small screens */
-@media (max-width: 900px) {
-    .exco-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-  .timeline {
-    flex-direction: column;
-    align-items: flex-start;
-    min-height: unset;
-  }
-  }
-  .event {
-    flex-direction: row;
-    align-items: center;
-    min-width: unset;
-    margin-bottom: 2rem;
-  }
-  .dot {
-    margin-right: 1rem;
-  }
-  .event-dialog {
-    left: 100%;
-    top: 0;
-    transform: translateX(0);
-    min-width: 160px;
-  }
 
 
 

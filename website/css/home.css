@@ -1,5 +1,3 @@
-
-
 /* start of motto */
 .motto{
     background-color: var(--primary-color);
@@ -8,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 35px 20px;
+    padding: 35px;
     text-align: center;
 }
 .motto h1, .motto p{
@@ -18,7 +16,6 @@
 }
 .motto h1{
     font-size: 50px;
-    font-size: bold;   
 }
 .motto p{
     color: var(--secondary-color);
