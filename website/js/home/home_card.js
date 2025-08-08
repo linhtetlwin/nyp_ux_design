@@ -2,7 +2,7 @@
 // and creates four activity cards in home.html
 Promise.all([
   fetch('../json/upcoming_activities.json').then(res => res.json()),
-  fetch('../json/previous_activities.json').then(res => res.json())
+  fetch('../json/recent_activities.json').then(res => res.json())
 ])
 .then(([activities1, activities2]) => {
   const allActivities = [...activities1, ...activities2]; // Combine both arrays

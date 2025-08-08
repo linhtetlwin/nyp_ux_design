@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Primers' Orientation Camp 2025",
+    "date": "3rd May",
+    "description": "A camp to let club members bond and interact with one another",
+    "image": "../images/home/poc.jpg",
+    "link": "events.html#poc"
+  },
+  {
+    "title": "Primers Welcome Party 2025",
+    "date": "29th April",
+    "description": "Showcase what primers have to offer, let cca members interact and bond with each other",
+    "image": "../images/home/welcome_party.jpg",
+    "link": "events.html#pwc"
+  }
+]

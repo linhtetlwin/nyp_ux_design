@@ -1,6 +1,6 @@
 // This code reads the contents of previous_activities.json and creates previous activity cards in events.html
 
-fetch('../json/previous_activities.json')
+fetch('../json/recent_activities.json')
   .then(response => response.json())
   .then(activities => {
     const row = document.getElementById('recent-event-cards');

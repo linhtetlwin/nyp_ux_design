@@ -10,8 +10,6 @@
     <script src="../js/reusable_widgets/nav_bar.js"></script>
     <script src="../js/reusable_widgets/footer.js"></script>
     <script src="../js/reusable_widgets/join_us_modal.js"></script>
-    <script src="../js/events/recent_event_card.js"></script>
-    <script src="../js/events/upcoming_event_card.js"></script>
     <script src="../js/sign_up.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
@@ -25,17 +23,98 @@
     <div id="modal-container"></div>
     <!-- end of Sign Up Dialog Modal -->
 
+
+    <!-- I intended to use the json files to display event cards here but there was 
+    an error. There are href pointers to specific sections of this page (using id).
+    When those pointers are used, event.html is opened and their respective sections are 
+    showed. But if json is used here, the data is not loaded as soon as the web page opens 
+    and errors happen, so I won't be using json here. Json will be used only in home page. -->
     <main>
-      <!-- Section for recent events -->
-      <section class="event-section ">
+      <!-- Section for upcoming events -->
+      <section class="event-section">
         <h1 id="upcoming-event">Upcoming events</h1>
-        <div id="upcoming-event-cards" class="card-row" ></div>
+        <div id="upcoming-event-cards" class="card-row" >
+          <div class="card-parent">
+            <a href="#bbsg">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../images/home/bbsg.jpg" class="card-img-top" alt="NYP Primer members at Boys' Brigade Share-A-Gift 2024">
+                </div>
+                <div class="card-body d-flex row">
+                  <h1>Boys' Brigade Share-a-Gift</h1>
+                  <h2>21st November 2025 12a.m. to 6p.m.</h2>
+                  <p class="card-text">Work with Boys Brigade to collect food donation and distribute to the less fortunate</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="card-parent">
+            <a href="#ndp">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../images/home/ndp.jpg" class="card-img-top" alt="NYP Primer members at NDP 2025">
+                </div>
+                <div class="card-body d-flex row">
+                  <h1>National Day Parade 2025</h1>
+                  <h2>May to 9th August on Saturdays 9am to 5pm</h2>
+                  <p class="card-text">To help in the National Day Parade, interact with the audience and cheer them up</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
 
       <!-- Section for recent events -->
       <section class="event-section ">
         <h1 id="recent-event">Recent Events</h1>
-        <div id="recent-event-cards" class="card-row" ></div>
+        <div id="recent-event-cards" class="card-row">
+          <div class="card-parent">
+            <a href="#poc">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../images/home/poc.jpg" class="card-img-top" alt="NYP Primer members at Primers' Orientation Camp 2025">
+                </div>
+                <div class="card-body d-flex row">
+                  <h1>Primers' Orientation Camp 2025</h1>
+                  <h2>3rd May</h2>
+                  <p class="card-text">A camp to let club members bond and interact with one another</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="card-parent">
+            <a href="#poc">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../images/home/poc.jpg" class="card-img-top" alt="NYP Primer members at Primers' Orientation Camp 2025">
+                </div>
+                <div class="card-body d-flex row">
+                  <h1>Primers' Orientation Camp 2025</h1>
+                  <h2>3rd May</h2>
+                  <p class="card-text">A camp to let club members bond and interact with one another</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="card-parent">
+            <a href="#pwc">
+              <div class="card">
+                <div class="card-image">
+                  <img src="../images/home/welcome_party.jpg" class="card-img-top" alt="NYP Primer members at Primers Welcome Party 2025">
+                </div>
+                <div class="card-body d-flex row">
+                  <h1>Primers Welcome Party 2025</h1>
+                  <h2>29th April</h2>
+                  <p class="card-text">Showcase what primers have to offer, let cca members interact and bond with each other</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
 
       <hr style="color: var(--primary-color); margin: 10px 0px 30px 0px">
@@ -81,7 +160,7 @@
             <div class="event">
               <!-- start of event content -->
               <div class="event-info">
-                <p><span class="key">Event Duration</span> - <span class="value">May to 9th August on Saturdays 9am to 5pm</span></p>
+                <p><span class="key">Event Duration</span> - <span class="value">5th May to 9th August on Saturdays 9am to 5pm</span></p>
                 <p><span class="key">Event Location</span> - <span class="value">Padang</span></p>
                 <p><span class="key">CCA points</span> - <span class="value">3 points</span></p>
                 <p><span class="key">Registration period</span> - <span class="value">3rd Feb to 28th April</span></p>
@@ -119,8 +198,8 @@
             <div class="event">
               <!-- start of event content -->
               <div class="event-info">
-                <p><span class="key">Event Duration</span> - <span class="value">21st November 2025 12a.m. to 6p.m.</span></p>
-                <p><span class="key">Event Location</span> - <span class="value">Bedok HDB Estates</span></p>
+                <p><span class="key">Event Duration</span> - <span class="value">3rd May</span></p>
+                <p><span class="key">Event Location</span> - <span class="value">Girls' Brigade</span></p>
                 <p><span class="key">CCA points</span> - <span class="value">1 point</span></p>
                 <p class="key">Event description</p>
                 <p>
@@ -134,7 +213,7 @@
             
               <!-- start of image -->
                <div class="event-img">
-                  <img src="../images/event/poc.jpg" alt="NYP Primer members at Boys' Brigade Share-a-Gift event 2024" aria-hidden="true">
+                  <img src="../images/event/poc.jpg" alt="NYP Primer members at Primers' Orientation Camp 2025">
                </div>
                <!-- end of image -->
             </div>
@@ -147,9 +226,9 @@
             <div class="event">
               <!-- start of event content -->
               <div class="event-info">
-                <p><span class="key">Event Duration</span> - <span class="value">May to 9th August on Saturdays 9am to 5pm</span></p>
-                <p><span class="key">Event Location</span> - <span class="value">Padang</span></p>
-                <p><span class="key">CCA points</span> - <span class="value">3 points</span></p>
+                <p><span class="key">Event Duration</span> - <span class="value">29th April</span></p>
+                <p><span class="key">Event Location</span> - <span class="value">NYP Theatre of the Arts</span></p>
+                <p><span class="key">CCA points</span> - <span class="value">1 points</span></p>
                 <p class="key">Event description</p>
                 <p>
                   Join Us for a 3month journey as we prepare for Singapore's National Day Parade 2025! 
@@ -163,7 +242,7 @@
             
               <!-- start of image -->
                <div class="event-img">
-                  <img src="../images/event/pwc.jpg" alt="NYP primer memebers at NDP 2025" aria-hidden="true">
+                  <img src="../images/event/pwc.jpg" alt="NYP primer memebers at Primers Welcome Party 2025" aria-hidden="true">
                </div>
                <!-- end of image -->
             </div>

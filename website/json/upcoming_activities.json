@@ -1,18 +1,18 @@
 [
   {
     "title": "Boys' Brigade Share-A-Gift",
-    "date": "21/11/2025",
+    "date": "1st November 2025 12a.m. to 6p.m.",
     "description": "Work with Boys Brigade to collect food donation and distribute to the less fortunate",
-    "image": "https://linhtetlwin.github.io/nyp_ux_design_assignment/home/bbsg.jpg",
-    "link": ""
+    "image": "../images/home/bbsg.jpg",
+    "link": "events.html#bbsg"
   },
 
   {
-    "title": "Boys' Brigade Share-A-Gift",
-    "date": "21/11/2025",
-    "description": "Work with Boys Brigade to collect food donation and distribute to the less fortunate",
-    "image": "https://linhtetlwin.github.io/nyp_ux_design_assignment/home/bbsg.jpg",
-    "link": ""
+    "title": "National Day Parade 2025",
+    "date": "May to 9th August on Saturdays 9am to 5pm",
+    "description": "To help in the National Day Parade, interact with the audience and cheer them up",
+    "image": "../images/home/ndp.jpg",
+    "link": "events.html#ndp"
   }
 
 ]
