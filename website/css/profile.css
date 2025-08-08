@@ -31,6 +31,7 @@ section{
 .value{
     color: var(--primary-color);
     text-align: right;
+    font-weight: bold;
 }
 @media (max-width: 850px) {
     .personal-info{
@@ -80,6 +81,8 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 .doughnut-chart {
     width: 150px;
@@ -155,6 +158,9 @@ section{
 @media (max-width: 1000px) {
     .doughnut-wrapper {
       flex: 0 0 33.33%; /* 3 per row (100 / 3 = 33.33%) */
+    }
+    .cca-point-chart{
+        row-gap: 20px;
     }
 }
 /* end of cca point chart */
