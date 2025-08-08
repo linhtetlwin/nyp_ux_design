@@ -98,7 +98,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const profileIcon = document.getElementById('profileIcon');
 
             if (isValid) {
-              alert('Thank you for Joining Us!');
+              const toastEl = document.getElementById('successToast');
+              const toast = new bootstrap.Toast(toastEl);
+              toast.show();
+              
               closeModalFunc();
               joinUsForm.reset();
               if (joinBtn) joinBtn.style.display = 'none';

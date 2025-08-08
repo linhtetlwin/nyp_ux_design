@@ -166,7 +166,7 @@ img{
     width: 100%;
     padding: 0.7rem 1rem;
     margin-bottom: 20px;
-    border: 1px solid #bbbbbb;
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
     background-color: var(--bg-color);
     font-size: 16px;
@@ -219,6 +219,12 @@ img{
     overflow: hidden;
 }
 /* end of join us modal */
+
+/* start of toast */
+#successToast{
+  z-index: 3;
+}
+/* end of toast */
 
 /* start of hero */
 .hero{
