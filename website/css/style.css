@@ -287,11 +287,11 @@ footer h1, footer p, footer ul{
   background-color: var(--primary-color);
   font-size: 30px;
 }
-.fa-facebook{
-  color: #106aff !important;
-}
-.fa-instagram{
-  color: #d00be9;
+.social-media img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
 }
 .fa-tiktok{
   color: #080808;
