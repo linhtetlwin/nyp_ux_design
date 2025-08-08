@@ -1,4 +1,10 @@
 /* start of meet our exco*/
+.whatWeAre{
+  justify-content: space-between;
+}
+.whatWeAre p{
+  margin: 0;
+}
 .exco {
   background-color:var(--primary-color);
   color: var(--secondary-color);
@@ -64,7 +70,7 @@
 }
  
   .timeline-container {
-    padding: 30px 20px;
+    padding: 30px;
   }
   .timeline {
     position: relative;

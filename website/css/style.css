@@ -26,7 +26,7 @@ img{
 
 /*start of nav bar */
 #navbar-container{
-    padding: 0px 20px;
+    padding: 0px 30px;
     background-color: var(--bg-color); 
     border-bottom: 1px solid #3b181736;
 }
@@ -219,7 +219,7 @@ img{
 /* start of hero */
 .hero{
     height: 450px; 
-    padding: 30px 20px;
+    padding: 30px ;
     width: 100%;
     gap: 15px;
     justify-content: space-between;

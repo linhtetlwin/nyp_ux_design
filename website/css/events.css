@@ -1,6 +1,6 @@
 /* Sections */
 main {
-  padding: 30px 20px;
+  padding: 30px;
 }
 .card-row{
     display: flex;
@@ -10,14 +10,6 @@ main {
 }
 section{
   margin-bottom: 30px;
-}
-
-
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .event-card .image-placeholder {

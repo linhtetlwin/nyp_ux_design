@@ -28,9 +28,6 @@ therefore, the nav bar will be hard coded to hide 'Join Us' button in profile.ht
     justify-content: space-between;
     gap: 20px;
 }
-.filler{
-    height: 25.6px;
-}
 .profile i{
     font-size: 175px;  
 }
