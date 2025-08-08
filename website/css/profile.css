@@ -177,4 +177,7 @@ therefore, the nav bar will be hard coded to hide 'Join Us' button in profile.ht
     --bs-table-bg: var(--bg-color) !important;
     --bs-table-color: var(--accent-color) !important;
 }
+.pointer{
+    cursor: pointer;
+}
 /* end of enrolled events and previous events */
