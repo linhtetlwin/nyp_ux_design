@@ -121,6 +121,11 @@ img{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 0px !important;
     margin: 16px 8px 8px 0px;
+    transition: transform 0.3s ease;
+}
+.card-parent:hover {
+  transform: translateY(-10px); 
+  cursor: pointer; 
 }
 .card-image{
     height: 160px;

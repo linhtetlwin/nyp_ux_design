@@ -1,5 +1,6 @@
 // For reusing footer
 // This js code pastes the content of footer.html in the container of id footer-container
+// https://linhtetlwin.github.io/nyp_ux_design/website/html/reusable_widgets/footer.html
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("footer-container");
   if (container) {
