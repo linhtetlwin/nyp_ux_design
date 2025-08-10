@@ -402,5 +402,6 @@ footer h1, footer p, footer ul{
     footer .questions, footer .social-media{
       justify-content: flex-start;
       height: 100px;
+      width: 100%;
     } 
 }
