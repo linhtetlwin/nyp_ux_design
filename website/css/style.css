@@ -316,7 +316,8 @@ footer .questions, footer .social-media{
   height: 125px;
   justify-content: space-between;
   /* border: 1px solid red; */
-  width: 400px;
+  width: 45%;
+  max-width: 400px;
   text-align: center;
 }
 footer h1, footer p, footer ul{
