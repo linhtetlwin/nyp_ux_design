@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const contaienrClassName = container.className;
 
   if (container) {
-    fetch("../html/reusable_widgets/nav_bar.html")
+    fetch("https://linhtetlwin.github.io/nyp_ux_design/website/html/reusable_widgets/nav_bar.html")
       .then(response => response.text())
       .then(data => {
         container.innerHTML = data;

@@ -1,8 +1,8 @@
 // This code reads the contents of upcoming_activities.json and previous_activities.json
 // and creates four activity cards in home.html
 Promise.all([
-  fetch('../json/upcoming_activities.json').then(res => res.json()),
-  fetch('../json/recent_activities.json').then(res => res.json())
+  fetch('https://linhtetlwin.github.io/nyp_ux_design/website/json/upcoming_activities.json').then(res => res.json()),
+  fetch('https://linhtetlwin.github.io/nyp_ux_design/website/json/recent_activities.json').then(res => res.json())
 ])
 .then(([activities1, activities2]) => {
   const allActivities = [...activities1, ...activities2]; // Combine both arrays
