@@ -32,7 +32,12 @@ img{
 }
 .nav-item{
     margin: 0px 20px;
-    /* border: 1px solid red; */
+}
+.nav-item a:hover{
+  color: var(--primary-color) !important;
+}
+.chosen-page{
+    border-bottom: 1px solid var(--primary-color) !important;
 }
 .nav-item a{
     color: var(--accent-color);
@@ -44,7 +49,7 @@ img{
 .nav-link.dropdown-toggle::after {
   margin-left: 0.1rem;
 }
-.cta-btn{
+.cta-btn {
   color: white;    
   background-color: var(--primary-color);    
   border-color: var(--primary-color);
@@ -55,10 +60,46 @@ img{
   box-shadow: none;
   width: 115px !important;
   height: 45px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-.cta-btn:hover{
+
+/* Background layer */
+.cta-btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: var(--primary-color);
-  color: white;
+  border-radius: inherit;
+  z-index: -2;
+}
+
+/* Hover animation overlay */
+.cta-btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* darker overlay effect */
+  transition: all 0.3s;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.cta-btn:hover:before {
+  width: 100%;
+}
+
+
+
+.cta-btn:hover:before {
+  width: 100%;
 }
 .nav-item.dropdown {
   position: relative;
