@@ -14,6 +14,8 @@
     <script src="../js/sign_up.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- start of nav bar -->
@@ -51,7 +53,7 @@
             <!-- end of content -->
 
             <!-- start of image -->
-             <div class="hero-img">
+             <div class="hero-img" data-aos="fade-left">
                 <img src="../images/home/aboutus.jpg" alt="" aria-hidden="true">
              </div>
              <!-- end of image -->
@@ -61,8 +63,8 @@
         <!-- Exco section showing executive committee members -->
         <section class="exco">
             <h1>Meet Our Exco</h1>
-            <div class="exco-member-row">
-                <div class="exco-member">
+            <div class="exco-member-row" data-aos="fade-left">
+                <div class="exco-member" data-aos="fade-left">
                     <div class="exco-member-photo">
                         <img src="../images/exco/Kai Yi.JPG" alt="photo of Kai Yi">
                     </div>
@@ -71,7 +73,7 @@
                         <div class="exco-member-role">President</div>
                     </div>
                 </div>
-                <div class="exco-member">
+                <div class="exco-member" data-aos="fade-left">
                     <div class="exco-member-photo">
                         <img src="../images/exco/Jaedyn.JPG" alt="photo of Jaedyn">
                     </div>
@@ -80,7 +82,7 @@
                         <div class="exco-member-role">Vice President</div>
                     </div>
                 </div>
-                <div class="exco-member">
+                <div class="exco-member" data-aos="fade-left">
                     <div class="exco-member-photo">
                         <img src="../images/exco/Luke.JPG" alt="photo of Luke">
                     </div>
@@ -90,7 +92,7 @@
                     </div>
                 </div>
             
-                <div class="exco-member">
+                <div class="exco-member" data-aos="fade-left">
                     <div class="exco-member-photo">
                         <img src="../images/exco/Jing Xian.JPG" alt="photo of Jing Xian">
                     </div>
@@ -102,7 +104,7 @@
             </div>
 
             <div class="exco-member-row">
-                <div class="exco-member">
+                <div class="exco-member" data-aos="fade-left">
                     <div class="exco-member-photo">
                         <img src="../images/exco/Yan Yan.JPG" alt="photo of Yan Yan">
                     </div>
@@ -111,7 +113,7 @@
                         <div class="exco-member-role">Publicity</div>
                     </div>
                 </div>
-                <div class="exco-member">
+                <div class="exco-member" data-aos="fade-left">
                     <div class="exco-member-photo">
                         <img src="../images/exco/Miguel.JPG" alt="photo of Miguel">
                     </div>
@@ -120,7 +122,7 @@
                         <div class="exco-member-role">Logistics</div>
                     </div>
                 </div>
-                <div class="exco-member">
+                <div class="exco-member" data-aos="fade-left">
                     <div class="exco-member-photo">
                         <img src="../images/exco/Jin Xuan.JPG" alt="photo of Jin Xuan">
                     </div>
@@ -130,7 +132,7 @@
                     </div>
                 </div>
             
-                <div class="exco-member">
+                <div class="exco-member" data-aos="fade-left">
                     <div class="exco-member-photo">
                         <img src="../images/exco/Samuel.JPG" alt="photo of Samuel">
                     </div>
@@ -187,5 +189,11 @@
     <!-- start of footer -->
     <div id="footer-container"></div>
     <!-- end of footer -->
+
+    <script>
+        AOS.init({
+          duration: 1000, 
+        });
+    </script>
 </body>
 </html>

@@ -33,7 +33,7 @@ img{
 .nav-item{
     margin: 0px 20px;
 }
-.nav-item a:hover{
+.nav-item a:hover, .nav-item a:hover i{
   color: var(--primary-color) !important;
 }
 .chosen-page{
@@ -55,7 +55,6 @@ img{
   border-color: var(--primary-color);
   padding: 10px 12px;
   border-radius: 10px;
-  transition: all 0.4s ease-in-out;
   border: none;
   box-shadow: none;
   width: 115px !important;
@@ -64,8 +63,6 @@ img{
   overflow: hidden;
   z-index: 1;
 }
-
-/* Background layer */
 .cta-btn:after {
   content: '';
   position: absolute;
@@ -77,8 +74,6 @@ img{
   border-radius: inherit;
   z-index: -2;
 }
-
-/* Hover animation overlay */
 .cta-btn:before {
   content: '';
   position: absolute;
@@ -86,18 +81,11 @@ img{
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* darker overlay effect */
+  background-color: rgba(0, 0, 0, 0.2); 
   transition: all 0.3s;
   border-radius: inherit;
   z-index: -1;
 }
-
-.cta-btn:hover:before {
-  width: 100%;
-}
-
-
-
 .cta-btn:hover:before {
   width: 100%;
 }

@@ -69,10 +69,14 @@ section{
   display: flex;
   gap: 20px;
 }
-.withdraw {
+.withdraw-btn {   
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  width: 115px !important;
+  height: 45px;
   background-color: #ccc !important;
   color: #555 !important;
-  border: none;
   cursor: not-allowed;
 }
 @media (max-width: 1173px) {
