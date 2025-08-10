@@ -1,10 +1,11 @@
 // For reusing join us
 // This js code pastes the content of footer.html in the container of id modal-container
+// https://linhtetlwin.github.io/nyp_ux_design/website/html/reusable_widgets/join_us_modal.html
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("modal-container");
 
   if (container) {
-    fetch("https://linhtetlwin.github.io/nyp_ux_design/website/html/reusable_widgets/join_us_modal.html")
+    fetch("../html/reusable_widgets/join_us_modal.html")
       .then(response => response.text())
       .then(data => {
         container.innerHTML = data;
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Now that the modal HTML is inserted, attach the modal-related JS
         const modal = document.getElementById('joinUsModal');
         const joinUsForm = document.getElementById('joinUsForm');
+        const closeBtn = document.querySelector('.close-btn')
 
         function openModal() {
           modal.style.display = 'block';
@@ -44,6 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
           if (event.target === modal) {
             closeModalFunc();
           }
+        });
+
+        closeBtn.addEventListener('click', function (event) {
+            closeModalFunc();
         });
 
         if (joinUsForm) {
