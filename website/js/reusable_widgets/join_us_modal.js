@@ -115,9 +115,25 @@ document.addEventListener("DOMContentLoaded", function () {
             }
           });
         }
+
+        // Fill fields when logo is clicked
+        const formLogo = document.querySelector('.form-logo img'); // or '.form-logo'
+        if (formLogo) {
+          formLogo.addEventListener('click', function () {
+            document.getElementById('name').value = '';
+            document.getElementById('school').value = 'SIT';
+            document.getElementById('admission').value = 'A123456';
+            document.getElementById('phone').value = '912345';
+            document.getElementById('emergencyName').value = 'Jane Doe';
+            document.getElementById('emergencyNumber').value = '98765432';
+          });
+}
       })
       .catch(error => {
         console.error("Error loading modal:", error);
       });
+
+
+
   }
 });
